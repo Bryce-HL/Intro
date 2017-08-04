@@ -1,0 +1,37 @@
+import sys
+
+print("What is your name?")
+
+name = raw_input()
+
+hello = "Hello " 
+
+story1 = '''. Welcome to the world of Choicedom! Throughout the kingdom
+there are many forks and choices you will have to make in order to progress. You're goal 
+is to make it to meet the king! Do you wish to progress? Type yes or no.
+'''
+
+print(hello + name + story1)
+
+Answer1 = raw_input()
+
+if Answer1 == "yes":
+    print('''
+    Awesome, we shall proceed! You start walking down decision alley and come
+    to the first intersection. At the intersection there is two arrows one points to 
+    the left and the other to the right. The arrow pointing to the right says "If you 
+    head in this direction you will face certain doom! JK!" and the arrow to the left
+    states, "We will try to not hurt or upset you in anyway." Which way do you go?
+    Type left or right.
+    ''')
+
+elif Answer1 == "no":
+    print("Wrong answer, the jinguels devour you whole do to your lack of enthusiasm.")
+    sys.exit(1)
+
+Answer2 = raw_input()
+
+if Answer2 == "right":
+    print("This is advancing well!")
+elif Answer2 == "left":
+    print("Maybe I can do this.")
