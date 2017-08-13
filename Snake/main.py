@@ -108,7 +108,7 @@ class AsteroidsDemo(ShowBase):
 
         # Load the background starfield.
         self.setBackgroundColor((0, 0, 0, 1))
-        self.bg = loadObject("stars.jpg", scale=146, depth=200,
+        self.bg = loadObject("Bryce_2VB_4plus_Saratoga2016.jpg", scale=146, depth=200,
                              transparency=False)
 
         # Load the ship and set its initial velocity.
