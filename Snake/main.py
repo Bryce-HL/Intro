@@ -108,7 +108,7 @@ class AsteroidsDemo(ShowBase):
 
         # Load the background starfield.
         self.setBackgroundColor((0, 0, 0, 1))
-        self.bg = loadObject("Bryce_2VB_4plus_Saratoga2016.jpg", scale=146, depth=200,
+        self.bg = loadObject("stars.jpg", scale=146, depth=200,
                              transparency=False)
 
         # Load the ship and set its initial velocity.
@@ -171,7 +171,7 @@ class AsteroidsDemo(ShowBase):
         for i in range(10):
             # This loads an asteroid. The texture chosen is random
             # from "asteroid1.png" to "asteroid3.png".
-            asteroid = loadObject("asteroid%d.png" % (randint(1, 3)),
+            asteroid = loadObject("asteroid%d.png" % (randint(1, 4)),
                                   scale=AST_INIT_SCALE)
             self.asteroids.append(asteroid)
 
